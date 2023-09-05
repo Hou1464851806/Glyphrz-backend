@@ -1,11 +1,8 @@
 package com.glyphrz.glyphrize;
 
-import jakarta.persistence.*;
+import java.util.ArrayList;
 
-@Entity
-public class Font {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+public class FontSyncRequest {
     private long fontKey;
     private String name;
     private String enName;
@@ -17,14 +14,22 @@ public class Font {
     private long updateTime;
     private long syncTime;
     private long gbkCount;
-    private long userId;
+    private ArrayList<Glyph> glyphs;
 
-    public long getUserId() {
-        return userId;
+    public long getFontKey() {
+        return fontKey;
     }
 
-    public void setUserId(long userId) {
-        this.userId = userId;
+    public void setFontKey(long fontKey) {
+        this.fontKey = fontKey;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getEnName() {
@@ -33,6 +38,14 @@ public class Font {
 
     public void setEnName(String enName) {
         this.enName = enName;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public String getCopyright() {
@@ -59,38 +72,6 @@ public class Font {
         this.license = license;
     }
 
-    public long getSyncTime() {
-        return syncTime;
-    }
-
-    public void setSyncTime(long syncTime) {
-        this.syncTime = syncTime;
-    }
-
-    public long getFontKey() {
-        return fontKey;
-    }
-
-    public void setFontKey(long fontKey) {
-        this.fontKey = fontKey;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
     public long getCreatedTime() {
         return createdTime;
     }
@@ -107,12 +88,27 @@ public class Font {
         this.updateTime = updateTime;
     }
 
+    public long getSyncTime() {
+        return syncTime;
+    }
+
+    public void setSyncTime(long syncTime) {
+        this.syncTime = syncTime;
+    }
+
     public long getGbkCount() {
         return gbkCount;
     }
 
-    public void setGbkCount(long gb2312Count) {
-        this.gbkCount = gb2312Count;
+    public void setGbkCount(long gbkCount) {
+        this.gbkCount = gbkCount;
     }
 
+    public ArrayList<Glyph> getGlyphs() {
+        return glyphs;
+    }
+
+    public void setGlyphs(ArrayList<Glyph> glyphs) {
+        this.glyphs = glyphs;
+    }
 }
