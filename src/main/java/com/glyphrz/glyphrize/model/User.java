@@ -1,22 +1,33 @@
-package com.glyphrz.glyphrize;
+package com.glyphrz.glyphrize.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import com.auth0.jwt.JWT;
+import com.auth0.jwt.algorithms.Algorithm;
+import jakarta.persistence.*;
 
 @Entity
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-    private String name;
-    private String password;
-    private String signature;
-    private String avatar;
+    @Column(unique = true)
+    private String name;//用于检验用户是否存在
+    private String password;//验证签名和登录验证
+    private String signature;//用户简介
+
+    private String avatar;//用户头像url
+
+    @Override
+    public String toString() {
+        return "User{" + "id=" + id + ", name='" + name + '\'' + ", signature='" + signature + '\'' + ", avatar='" + avatar + '\'' + '}';
+    }
+
+    //通过userName和password生成token
+    public String getToken() {
+        return JWT.create().withAudience(String.valueOf(this.name)).sign(Algorithm.HMAC256(this.password));
+    }
 
     public long getId() {
-        return id;
+        return this.id;
     }
 
     public void setId(long id) {
