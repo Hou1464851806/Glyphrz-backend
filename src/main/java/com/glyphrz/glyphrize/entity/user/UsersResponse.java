@@ -1,4 +1,4 @@
-package com.glyphrz.glyphrize.entity;
+package com.glyphrz.glyphrize.entity.user;
 
 
 import com.glyphrz.glyphrize.model.User;

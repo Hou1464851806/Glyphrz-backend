@@ -1,8 +1,8 @@
 package com.glyphrz.glyphrize.controller;
 
 import com.glyphrz.glyphrize.annotation.PassToken;
-import com.glyphrz.glyphrize.entity.FontsResponse;
-import com.glyphrz.glyphrize.entity.UsersResponse;
+import com.glyphrz.glyphrize.entity.font.FontsResponse;
+import com.glyphrz.glyphrize.entity.user.UsersResponse;
 import com.glyphrz.glyphrize.model.Font;
 import com.glyphrz.glyphrize.model.FontBin;
 import com.glyphrz.glyphrize.model.Glyph;
@@ -11,7 +11,6 @@ import com.glyphrz.glyphrize.repository.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 

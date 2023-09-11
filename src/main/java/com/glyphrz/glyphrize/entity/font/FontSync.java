@@ -1,4 +1,4 @@
-package com.glyphrz.glyphrize.entity;
+package com.glyphrz.glyphrize.entity.font;
 
 import com.glyphrz.glyphrize.model.Activity;
 import com.glyphrz.glyphrize.model.Font;
