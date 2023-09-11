@@ -44,20 +44,24 @@ public class AuthenticationInterceptor implements HandlerInterceptor {
             UserLoginToken userLoginToken = method.getAnnotation(UserLoginToken.class);
             if (userLoginToken.required()) {
                 Cookie[] cookies = request.getCookies();
+                //Cookies为空，代表无token
                 if (cookies == null) {
                     System.out.println("无token，需要登录");
                     response.setStatus(403);
                     return false;
                 }
+                //解析token中的userName信息
                 String token = cookies[0].getValue();
                 String userName = JWT.decode(token).getAudience().get(0);
                 System.out.printf("\033[31m%s 正在尝试鉴权\n\033[0m", userName);
+                //查询用户是否存在
                 User user = userRepository.findByName(userName);
                 if (user == null) {
                     System.out.println("用户不存在，需要登录");
                     response.setStatus(403);
                     return false;
                 }
+                //对JWT签名进行验证
                 try {
                     JWTVerifier jwtVerifier = JWT.require(Algorithm.HMAC256(user.getPassword())).build();
                     jwtVerifier.verify(token);
@@ -73,6 +77,7 @@ public class AuthenticationInterceptor implements HandlerInterceptor {
         return true;
     }
 
+    //重写其它两个方法
     @Override
     public void postHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o, ModelAndView modelAndView) throws Exception {
 
