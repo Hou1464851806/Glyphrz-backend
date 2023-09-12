@@ -1,6 +1,6 @@
-package com.glyphrz.glyphrize.repository;
+package com.apriverse.glyphz.repository;
 
-import com.glyphrz.glyphrize.model.Glyph;
+import com.apriverse.glyphz.model.Glyph;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.ArrayList;

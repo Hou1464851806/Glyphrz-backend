@@ -1,8 +1,8 @@
-package com.glyphrz.glyphrize.entity.font;
+package com.apriverse.glyphz.entity.font;
 
-import com.glyphrz.glyphrize.model.Activity;
-import com.glyphrz.glyphrize.model.Font;
-import com.glyphrz.glyphrize.model.Glyph;
+import com.apriverse.glyphz.model.Activity;
+import com.apriverse.glyphz.model.Font;
+import com.apriverse.glyphz.model.Glyph;
 
 import java.util.ArrayList;
 

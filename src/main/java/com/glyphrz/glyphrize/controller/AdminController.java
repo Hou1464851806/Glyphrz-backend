@@ -1,13 +1,13 @@
-package com.glyphrz.glyphrize.controller;
+package com.apriverse.glyphz.controller;
 
-import com.glyphrz.glyphrize.annotation.PassToken;
-import com.glyphrz.glyphrize.entity.font.FontsResponse;
-import com.glyphrz.glyphrize.entity.user.UsersResponse;
-import com.glyphrz.glyphrize.model.Font;
-import com.glyphrz.glyphrize.model.FontBin;
-import com.glyphrz.glyphrize.model.Glyph;
-import com.glyphrz.glyphrize.model.User;
-import com.glyphrz.glyphrize.repository.*;
+import com.apriverse.glyphz.annotation.PassToken;
+import com.apriverse.glyphz.entity.font.FontsResponse;
+import com.apriverse.glyphz.entity.user.UsersResponse;
+import com.apriverse.glyphz.model.Font;
+import com.apriverse.glyphz.model.FontBin;
+import com.apriverse.glyphz.model.Glyph;
+import com.apriverse.glyphz.model.User;
+import com.apriverse.glyphz.repository.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

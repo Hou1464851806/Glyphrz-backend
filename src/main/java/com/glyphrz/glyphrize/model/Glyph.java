@@ -1,4 +1,4 @@
-package com.glyphrz.glyphrize.model;
+package com.apriverse.glyphz.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
