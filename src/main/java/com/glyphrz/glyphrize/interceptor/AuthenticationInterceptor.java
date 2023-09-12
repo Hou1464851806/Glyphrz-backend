@@ -1,13 +1,13 @@
-package com.glyphrz.glyphrize.interceptor;
+package com.apriverse.glyphz.interceptor;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.JWTVerifier;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.exceptions.JWTVerificationException;
-import com.glyphrz.glyphrize.annotation.PassToken;
-import com.glyphrz.glyphrize.annotation.UserLoginToken;
-import com.glyphrz.glyphrize.model.User;
-import com.glyphrz.glyphrize.repository.UserRepository;
+import com.apriverse.glyphz.annotation.PassToken;
+import com.apriverse.glyphz.annotation.UserLoginToken;
+import com.apriverse.glyphz.model.User;
+import com.apriverse.glyphz.repository.UserRepository;
 import jakarta.annotation.Resource;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;

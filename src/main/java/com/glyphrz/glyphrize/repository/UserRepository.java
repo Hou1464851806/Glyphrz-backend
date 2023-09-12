@@ -1,6 +1,6 @@
-package com.glyphrz.glyphrize.repository;
+package com.apriverse.glyphz.repository;
 
-import com.glyphrz.glyphrize.model.User;
+import com.apriverse.glyphz.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserRepository extends JpaRepository<User, Integer> {

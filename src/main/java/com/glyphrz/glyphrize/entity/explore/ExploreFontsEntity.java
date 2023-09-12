@@ -1,6 +1,6 @@
-package com.glyphrz.glyphrize.entity.explore;
+package com.apriverse.glyphz.entity.explore;
 
-import com.glyphrz.glyphrize.model.Font;
+import com.apriverse.glyphz.model.Font;
 
 import java.util.ArrayList;
 

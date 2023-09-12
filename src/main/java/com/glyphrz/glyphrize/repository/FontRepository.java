@@ -1,6 +1,6 @@
-package com.glyphrz.glyphrize.repository;
+package com.apriverse.glyphz.repository;
 
-import com.glyphrz.glyphrize.model.Font;
+import com.apriverse.glyphz.model.Font;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.ArrayList;
