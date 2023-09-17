@@ -1,6 +1,6 @@
-package com.glyphrz.glyphrize.entity.user;
+package com.apriverse.glyphz.entity.user;
 
-import com.glyphrz.glyphrize.model.Config;
+import com.apriverse.glyphz.model.Config;
 
 public class UserLoginResponse {
     //private String sessionId;

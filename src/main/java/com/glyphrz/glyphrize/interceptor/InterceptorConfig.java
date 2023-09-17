@@ -1,4 +1,4 @@
-package com.glyphrz.glyphrize.interceptor;
+package com.apriverse.glyphz.interceptor;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

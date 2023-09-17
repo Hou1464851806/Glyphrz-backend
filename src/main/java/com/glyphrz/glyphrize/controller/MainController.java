@@ -1,16 +1,16 @@
-package com.glyphrz.glyphrize.controller;
+package com.apriverse.glyphz.controller;
 
 import com.auth0.jwt.JWT;
-import com.glyphrz.glyphrize.annotation.UserLoginToken;
-import com.glyphrz.glyphrize.entity.explore.ExploreFont;
-import com.glyphrz.glyphrize.entity.explore.ExploreFontsEntity;
-import com.glyphrz.glyphrize.entity.font.FontSync;
-import com.glyphrz.glyphrize.model.Activity;
-import com.glyphrz.glyphrize.model.Font;
-import com.glyphrz.glyphrize.model.Glyph;
-import com.glyphrz.glyphrize.model.User;
-import com.glyphrz.glyphrize.repository.*;
-import com.glyphrz.glyphrize.utils.Unicodes;
+import com.apriverse.glyphz.annotation.UserLoginToken;
+import com.apriverse.glyphz.entity.explore.ExploreFont;
+import com.apriverse.glyphz.entity.explore.ExploreFontsEntity;
+import com.apriverse.glyphz.entity.font.FontSync;
+import com.apriverse.glyphz.model.Activity;
+import com.apriverse.glyphz.model.Font;
+import com.apriverse.glyphz.model.Glyph;
+import com.apriverse.glyphz.model.User;
+import com.apriverse.glyphz.repository.*;
+import com.apriverse.glyphz.utils.Unicodes;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;

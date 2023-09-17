@@ -1,4 +1,4 @@
-package com.glyphrz.glyphrize.model;
+package com.apriverse.glyphz.model;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
