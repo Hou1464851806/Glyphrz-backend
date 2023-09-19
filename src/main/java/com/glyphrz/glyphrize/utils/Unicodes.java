@@ -1,4 +1,4 @@
-package com.glyphrz.glyphrize.utils;
+package com.apriverse.glyphz.utils;
 
 import java.util.ArrayList;
 

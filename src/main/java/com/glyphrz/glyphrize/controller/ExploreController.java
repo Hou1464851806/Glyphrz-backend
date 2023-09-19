@@ -1,15 +1,15 @@
-package com.glyphrz.glyphrize.controller;
+package com.apriverse.glyphz.controller;
 
-import com.glyphrz.glyphrize.annotation.PassToken;
-import com.glyphrz.glyphrize.entity.explore.ExploreFont;
-import com.glyphrz.glyphrize.entity.explore.ExploreFontEntity;
-import com.glyphrz.glyphrize.entity.explore.ExploreFontRequest;
-import com.glyphrz.glyphrize.entity.explore.ExploreFontsEntity;
-import com.glyphrz.glyphrize.model.Font;
-import com.glyphrz.glyphrize.model.Glyph;
-import com.glyphrz.glyphrize.model.User;
-import com.glyphrz.glyphrize.repository.*;
-import com.glyphrz.glyphrize.utils.Unicodes;
+import com.apriverse.glyphz.annotation.PassToken;
+import com.apriverse.glyphz.entity.explore.ExploreFont;
+import com.apriverse.glyphz.entity.explore.ExploreFontEntity;
+import com.apriverse.glyphz.entity.explore.ExploreFontRequest;
+import com.apriverse.glyphz.entity.explore.ExploreFontsEntity;
+import com.apriverse.glyphz.model.Font;
+import com.apriverse.glyphz.model.Glyph;
+import com.apriverse.glyphz.model.User;
+import com.apriverse.glyphz.repository.*;
+import com.apriverse.glyphz.utils.Unicodes;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

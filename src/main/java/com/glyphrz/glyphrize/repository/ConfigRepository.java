@@ -1,6 +1,6 @@
-package com.glyphrz.glyphrize.repository;
+package com.apriverse.glyphz.repository;
 
-import com.glyphrz.glyphrize.model.Config;
+import com.apriverse.glyphz.model.Config;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ConfigRepository extends JpaRepository<Config, Integer> {

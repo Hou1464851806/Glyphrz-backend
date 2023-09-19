@@ -1,4 +1,4 @@
-package com.glyphrz.glyphrize.model;
+package com.apriverse.glyphz.model;
 
 import jakarta.persistence.*;
 

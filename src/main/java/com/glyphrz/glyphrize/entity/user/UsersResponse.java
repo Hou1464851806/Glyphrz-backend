@@ -1,7 +1,7 @@
-package com.glyphrz.glyphrize.entity.user;
+package com.apriverse.glyphz.entity.user;
 
 
-import com.glyphrz.glyphrize.model.User;
+import com.apriverse.glyphz.model.User;
 
 import java.util.ArrayList;
 

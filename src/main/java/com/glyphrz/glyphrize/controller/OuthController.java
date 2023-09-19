@@ -1,13 +1,13 @@
-package com.glyphrz.glyphrize.controller;
+package com.apriverse.glyphz.controller;
 
 import com.auth0.jwt.JWT;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.glyphrz.glyphrize.annotation.PassToken;
-import com.glyphrz.glyphrize.annotation.UserLoginToken;
-import com.glyphrz.glyphrize.entity.user.UserLoginResponse;
-import com.glyphrz.glyphrize.model.Config;
-import com.glyphrz.glyphrize.model.User;
-import com.glyphrz.glyphrize.repository.*;
+import com.apriverse.glyphz.annotation.PassToken;
+import com.apriverse.glyphz.annotation.UserLoginToken;
+import com.apriverse.glyphz.entity.user.UserLoginResponse;
+import com.apriverse.glyphz.model.Config;
+import com.apriverse.glyphz.model.User;
+import com.apriverse.glyphz.repository.*;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;

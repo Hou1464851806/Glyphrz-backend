@@ -1,4 +1,4 @@
-package com.glyphrz.glyphrize.entity.explore;
+package com.apriverse.glyphz.entity.explore;
 
 public class ExploreFontRequest {
     private long fontKey;
